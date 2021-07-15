@@ -1,0 +1,26 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'maven-publish'
+
+group = "com.theprogrammingturkey.vanillanull"
+archivesBaseName = "vanillanull"
+version = "${mc_version}-${mod_version}"
+
+sourceCompatibility = targetCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven { url 'http://nexus.hc.to/content/repositories/pub_releases/' }
+    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    maven { url 'https://oss.sonatype.org/content/repositories/central' }
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot:1.16.1-R0.1-SNAPSHOT'
+}
+
+processResources {
+    expand projectVersion: project.version
+}

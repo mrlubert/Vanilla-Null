@@ -1,0 +1,5 @@
+main: com.theprogrammingturkey.vanillanull.VanillaNullCore
+name: Vanilla-Null
+version: 1.0
+authors: [Turkey, MrLubert]
+api-version: 1.17

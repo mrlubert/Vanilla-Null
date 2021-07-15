@@ -1,0 +1,5 @@
+main: com.theprogrammingturkey.vanillanull.VanillaNullCore
+name: 'Vanilla-Null'
+version: ${projectVersion}
+authors: Turkey2349
+api-version: '1.16'
